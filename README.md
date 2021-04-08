@@ -3,7 +3,7 @@ This project is based on the EMI calculator. Once the user entered the amount, i
 * view the calculated capital amount, interest and the loan installment per month.
 
 <p align="center">
-    ##### OR
+    OR
 </p>
 
 * request a loan. - Once the user request a loan, an email will be sent to the user confirming the request and the requested details will be displayed in the next page.
