@@ -1,6 +1,5 @@
 # Loan Request Application
-This project is based on the EMI calculator. Once the user entered the amount, interest rate and the loan term, the user can either 
-
+This project is based on the EMI calculator. The user can enter the amount, interest rate and the loan term needed and can either, 
 view the calculated capital amount, interest and the loan installment per month.
 <p align="center">
     OR
