@@ -1,12 +1,21 @@
 # Loan Request Application
 This project is based on the EMI calculator. Once the user entered the amount, interest rate and the loan term, the user can either 
-* view the calculated capital amount, interest and the loan installment per month.
+- view the calculated capital amount, interest and the loan installment per month.
+
+<br/>
 
 <p align="center">
     OR
 </p>
 
-* request a loan. - Once the user request a loan, an email will be sent to the user confirming the request and the requested details will be displayed in the next page.
+<br/>
+
+- request a loan. - Once the user request a loan, an email will be sent to the user confirming the request and the requested details will be displayed in the next page.
+
+## Languages
+![JavaScript](https://img.shields.io/badge/Language-JavaScript-orange)
+![HTML](https://img.shields.io/badge/Language-HTML-green)
+![CSS](https://img.shields.io/badge/Language-CSS-blue)
 
 ## Technologies
 * Angular 10
