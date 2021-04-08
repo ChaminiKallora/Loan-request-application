@@ -11,19 +11,22 @@ This project is based on the EMI calculator. Once the user entered the amount, i
 ## Configuration
 
 #### step 1
-Open backend solution with visula studio.
+Open the backend solution with visula studio
 
 #### step 2
-Run `dotnet run`
+Update the appsettings.json and the Properties/launchSettings.json
 
 #### step 3
-Open the loan-request-application/src/environments/environment.ts file and update the API_URL to the backend url used for the .net API.
+Run `dotnet run` in the terminal or build and run the project
 
 #### step 4
-Open terminal inside the frontend directory
+Open the loan-request-application/src/environments/environment.ts file and update the API_URL to the backend url used for the .net API
 
 #### step 5
-Run `npm install`. 
+Open a terminal inside the frontend directory
 
 #### step 6
+Run `npm install`
+
+#### step 7
 Run `ng serve --open`
