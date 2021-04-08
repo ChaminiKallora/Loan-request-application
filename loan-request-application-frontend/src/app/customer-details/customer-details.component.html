@@ -1,0 +1,65 @@
+<div class="dec-form">
+    <h2>Loan request form</h2>
+
+    <form class="form" action="" [formGroup]="customerForm" (ngSubmit)="addCustomer()">
+        <mat-form-field class="full-width">
+            <mat-label>Full Name</mat-label>
+            <input matInput formControlName="name" minlength="3" placeholder="Sithara Wellage">
+            <mat-error *ngIf="customerForm?.controls?.name?.touched && customerForm?.controls?.name?.errors">
+                <mat-error *ngIf="customerForm?.controls?.name?.errors.required">Full name is required</mat-error>
+                <mat-error *ngIf="customerForm?.controls?.name?.hasError('minlength')">Full name should be 3 or more than 3 characters</mat-error> 
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Choose a date</mat-label>
+            <input matInput formControlName="dob" [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="customerForm?.controls?.dob?.touched && customerForm?.controls?.dob?.errors">
+                <mat-error *ngIf="customerForm?.controls?.dob?.errors.required">Date of birth is required</mat-error> 
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>NIC</mat-label>
+            <input matInput formControlName="nic" minlength="10" maxlength="10" placeholder="959694934V">
+            <mat-error *ngIf="customerForm?.controls?.nic?.touched && customerForm?.controls?.nic?.errors">
+                <mat-error *ngIf="customerForm?.controls?.nic?.errors.required">NIC is required</mat-error> 
+                <mat-error *ngIf="customerForm?.controls?.nic?.hasError('minlength')">NIC should be 10 characters</mat-error> 
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+            <mat-error *ngIf="customerForm?.controls?.email?.touched && customerForm?.controls?.email?.errors">
+                <mat-error *ngIf="customerForm?.controls?.email?.errors.required">Email is required</mat-error> 
+                <mat-error *ngIf="customerForm?.controls?.email?.errors.email">Invalid email format.</mat-error>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Telephone</mat-label>
+            <span matPrefix>+94 &nbsp;</span>
+            <input type="tel" matInput type="number" minlength="9" maxlength="9" formControlName="phoneNumber" placeholder="773611234">
+            <mat-error *ngIf="customerForm?.controls?.phoneNumber?.touched && customerForm?.controls?.phoneNumber?.errors">
+                <mat-error *ngIf="customerForm?.controls?.phoneNumber?.errors.required">Phone number is required</mat-error> 
+                <mat-error *ngIf="customerForm?.controls?.phoneNumber?.hasError('minlength') || customerForm?.controls?.phoneNumber?.hasError('maxlength')">Phone number should be 9 characters</mat-error>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Loan Reason</mat-label>
+            <textarea matInput formControlName="loanReason" placeholder="Education"></textarea>
+            <mat-error *ngIf="customerForm?.controls?.loanReason?.touched && customerForm?.controls?.loanReason?.errors">
+                <mat-error *ngIf="customerForm?.controls?.loanReason?.errors.required">Phone number is required</mat-error> 
+            </mat-error>
+        </mat-form-field>
+
+        <br/>
+
+        <button mat-raised-button color="primary" style="padding-left: 15px; padding-right: 15px;" [disabled]="!customerForm.valid">Request</button>
+
+    </form>
+</div>

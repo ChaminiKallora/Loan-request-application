@@ -1,0 +1,18 @@
+.dec-form{
+    align-self: center;
+    text-align: center; 
+    margin: 80px; 
+    background-color: ivory;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+}
+
+.form {
+  min-width: 150px;
+  width: 100%;
+}
+
+.full-width {
+  width: 80%;
+}

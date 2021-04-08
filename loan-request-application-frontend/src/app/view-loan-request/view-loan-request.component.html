@@ -1,0 +1,59 @@
+<div class="dec-form">
+    <h2 style="text-align: center;">Details of the Loan request</h2>
+
+    <mat-grid-list cols="2" rowHeight="400px">
+        <mat-grid-tile style="background-color: floralwhite">
+            <div class="form" style="text-align: left; padding-left: 40px;">
+                <h3>Borrower details</h3>
+                <table style="border: transparent; width: 100%;">
+                    <tr style="height: 50px;">
+                        <td>Full Name</td>
+                        <td>{{customer.name}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Date of birth</td>
+                        <td>{{customer.dob}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>NIC</td>
+                        <td>{{customer.nic}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Email</td>
+                        <td>{{customer.email}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Phone number</td>
+                        <td>+94 {{customer.phoneNumber}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Reason</td>
+                        <td>{{customer.loanReason}}</td>
+                    </tr>
+                </table>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile style="background-color: white;">
+            <div class="form" style="text-align: left; padding-left: 20px;">
+                <h3>Loan details</h3>
+                <table style="border: transparent; width: 100%;">
+                    <tr style="height: 50px;">
+                        <td>Amount</td>
+                        <td>{{loan.amount}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Loan Term</td>
+                        <td>{{loan.loanTerm}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Interest Rate</td>
+                        <td>{{loan.interestRate}}</td>
+                    </tr>
+                    <tr style="height: 50px;"></tr>
+                    <tr style="height: 50px;"></tr>
+                    <tr style="height: 50px;"></tr>
+                </table>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

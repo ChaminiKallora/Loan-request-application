@@ -1,0 +1,74 @@
+<div class="dec-form">
+
+    <h2>Loan Caluculator</h2>
+
+    <mat-grid-list cols="2" rowHeight="270px">
+        <mat-grid-tile style="background-color: floralwhite">
+            <form class="form" action="" [formGroup]="loanForm" (ngSubmit)="loanCalculate()">
+                <mat-form-field class="full-width">
+                    <mat-label>Amount Rs.</mat-label>
+                    <input matInput type="number" formControlName="amount" placeholder="100000">
+                    <mat-error *ngIf="loanForm?.controls?.amount?.touched && loanForm?.controls?.amount?.errors">
+                        <mat-error *ngIf="loanForm?.controls?.amount?.errors.required">Amount is required</mat-error>
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="full-width">
+                    <mat-label>Loan Term (in months)</mat-label>
+                    <input matInput type="number" formControlName="loanTerm" placeholder="12">
+                    <mat-error *ngIf="loanForm?.controls?.loanTerm?.touched && loanForm?.controls?.loanTerm?.errors">
+                        <mat-error *ngIf="loanForm?.controls?.loanTerm?.errors.required">Loan term is required
+                        </mat-error>
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="full-width">
+                    <mat-label>Interest Rate</mat-label>
+                    <input matInput type="number" formControlName="interestRate" placeholder="2">
+                    <mat-error
+                        *ngIf="loanForm?.controls?.interestRate?.touched && loanForm?.controls?.interestRate?.errors">
+                        <mat-error *ngIf="loanForm?.controls?.interestRate?.errors.required">Interest Rate is required
+                        </mat-error>
+                    </mat-error>
+                </mat-form-field>
+
+                <br />
+
+                <button mat-raised-button color="primary" style="padding-left: 15px; padding-right: 15px;"
+                    [disabled]="!loanForm.valid">Calculate</button>
+            </form>
+        </mat-grid-tile>
+
+        <mat-grid-tile style="background-color: white;">
+            <div class="form" style="text-align: left; padding-left: 10px;">
+                <table style="border: transparent; width: 100%;">
+                    <tr style="height: 50px;">
+                        <td>Capital Amount Rs.</td>
+                        <td>: {{capitalAmount}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Interest Rs.</td>
+                        <td>: {{interest}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Loan installment Rs.</td>
+                        <td>: {{loanInstallment}}</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td style="text-align: center;">
+                            <button mat-raised-button color="primary"
+                                style="padding-left: 15px; padding-right: 15px; align-items: center;"
+                                [disabled]="!loanForm.valid" (click)="loanRequest()">
+                                Request loan
+                            </button>
+                        </td>
+                    </tr>
+
+                </table>
+
+
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+</div>
