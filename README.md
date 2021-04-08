@@ -12,11 +12,6 @@ This project is based on the EMI calculator. Once the user entered the amount, i
 
 - request a loan. - Once the user request a loan, an email will be sent to the user confirming the request and the requested details will be displayed in the next page.
 
-## Languages
-![JavaScript](https://img.shields.io/badge/Language-JavaScript-orange)
-![HTML](https://img.shields.io/badge/Language-HTML-green)
-![CSS](https://img.shields.io/badge/Language-CSS-blue)
-
 ## Technologies
 * Angular 10
 * .net core 3.0 web api
