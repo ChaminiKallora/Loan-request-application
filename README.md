@@ -5,7 +5,7 @@ This project is based on the EMI calculator. Once the user entered the amount, i
 
 ## Technologies
 * Angular 10
-* .NET 3.0
+* .net core 3.0 web api
 * MsSql
  
 ## Configuration
