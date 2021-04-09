@@ -14,16 +14,16 @@ request a loan. - Once the user request a loan, an email will be sent to the use
 ## Configuration
 
 #### step 1
-Open the backend solution with visula studio or any .NET development tool
+Open the backend solution with visual studio or any .NET development tool
 
 #### step 2
 Update the appsettings.json and the Properties/launchSettings.json
 
 #### step 3
-Run `dotnet run` from the command line in the backend root folder the or build and run the project from the tool
+Run `dotnet run` from the command line in the backend root folder or build and run the project from the tool
 
 #### step 4
-Open the loan-request-application/src/environments/environment.ts file and update the API_URL to the backend url used for the .net API
+Open the loan-request-application/src/environments/environment.ts file and update the API_URL using the backend url used for the .net API
 
 #### step 5
 Run `npm install` from the command line in the frontend root folder
