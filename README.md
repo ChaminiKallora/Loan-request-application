@@ -20,13 +20,13 @@ Open the backend solution with visula studio or any .NET development tool
 Update the appsettings.json and the Properties/launchSettings.json
 
 #### step 3
-Run `dotnet run` in the terminal from the command line in the backend root folder the or build and run the project from the tool
+Run `dotnet run` from the command line in the backend root folder the or build and run the project from the tool
 
 #### step 4
 Open the loan-request-application/src/environments/environment.ts file and update the API_URL to the backend url used for the .net API
 
 #### step 5
-Run `npm install` in the terminal from the command line in the frontend root folder
+Run `npm install` from the command line in the frontend root folder
 
 #### step 6
 Run `ng serve --open`
