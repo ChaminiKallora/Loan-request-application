@@ -1,6 +1,6 @@
 # Loan Request Application
 This project is based on the EMI calculator. The user can enter the amount, interest rate and the loan term needed and can either,<br/> 
-view the calculated capital amount, interest and the loan installment per month.
+view the calculated capital amount, interest and the loan installment per month
 <p align="center">
     OR
 </p>
@@ -8,28 +8,25 @@ request a loan. - Once the user request a loan, an email will be sent to the use
 
 ## Technologies
 * Angular 10
-* .net core 3.0 web api
+* .net core 3.1 web api
 * MsSql
  
 ## Configuration
 
 #### step 1
-Open the backend solution with visula studio
+Open the backend solution with visula studio or any .NET development tool
 
 #### step 2
 Update the appsettings.json and the Properties/launchSettings.json
 
 #### step 3
-Run `dotnet run` in the terminal or build and run the project
+Run `dotnet run` in the terminal from the command line in the backend root folder the or build and run the project from the tool
 
 #### step 4
 Open the loan-request-application/src/environments/environment.ts file and update the API_URL to the backend url used for the .net API
 
 #### step 5
-Open a terminal inside the frontend directory
+Run `npm install` in the terminal from the command line in the frontend root folder
 
 #### step 6
-Run `npm install`
-
-#### step 7
 Run `ng serve --open`
